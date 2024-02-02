@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
+use Module\Alarm\AlarmServiceProvider;
+
 
 return [
 
@@ -168,6 +170,10 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        // Modules providers
+
+        AlarmServiceProvider::class,
     ])->toArray(),
 
     /*
