@@ -2,7 +2,7 @@
 
 use Module\Notification\Drivers\NotificationSender;
 
-function msgSender()
+function notification()
 {
     return app(NotificationSender::class);
 }
