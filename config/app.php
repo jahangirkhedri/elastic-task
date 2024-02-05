@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
 use Module\Alarm\AlarmServiceProvider;
+use Module\Elastic\ElasticDataServiceProvider;
 use Module\Notification\NotificationsServiceProvider;
 
 return [
@@ -174,7 +175,8 @@ return [
         // Modules providers
 
         AlarmServiceProvider::class,
-        NotificationsServiceProvider::class
+        NotificationsServiceProvider::class,
+        ElasticDataServiceProvider::class,
     ])->toArray(),
 
     /*
